@@ -50,6 +50,7 @@
     <Compile Include="Structures\Curves\LinearCurve.cs" />
     <Compile Include="Dewlib.cs" />
     <Compile Include="Testing.cs" />
+    <Compile Include="HitPointParser.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
