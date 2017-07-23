@@ -1,8 +1,8 @@
 using System;
 
-using Structures;
+using osu_lib.Structures;
 
-namespace HitObjectInterpreter
+namespace osu_lib.HitObjectInterpreter
 {
     static class HitObjectParser
     {

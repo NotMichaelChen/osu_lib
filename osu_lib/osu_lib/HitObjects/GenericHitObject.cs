@@ -1,10 +1,10 @@
 ﻿using System;
 
-using BeatmapInfo;
-using HitObjectInterpreter;
-using HitObjects.Sliders;
+using osu_lib.BeatmapInfo;
+using osu_lib.HitObjectInterpreter;
+using osu_lib.HitObjects.Sliders;
 
-namespace HitObjects
+namespace osu_lib.HitObjects
 {
     //Represents a generic hitobject that can be used to get hit locations and
     //hit times regardless of the type of the hit object

@@ -1,4 +1,4 @@
-namespace HitObjectInterpreter
+namespace osu_lib.HitObjectInterpreter
 {
     // Represents a type of hitobject (Circle, Slider, Spinner)
     public enum HitObjectType

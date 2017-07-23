@@ -2,11 +2,11 @@ using System;
 using System.Globalization;
 using System.Collections.Generic;
 
-using Structures;
-using HitObjectInterpreter;
-using BeatmapInfo;
+using osu_lib.Structures;
+using osu_lib.HitObjectInterpreter;
+using osu_lib.BeatmapInfo;
 
-namespace HitObjects.Sliders
+namespace osu_lib.HitObjects.Sliders
 {
     //Represents a generic slider - as such it remains abstract
     abstract public class GenericSlider : HitObjectWrapper

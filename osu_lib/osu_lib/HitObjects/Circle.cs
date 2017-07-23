@@ -1,8 +1,8 @@
 using System;
 
-using HitObjectInterpreter;
+using osu_lib.HitObjectInterpreter;
 
-namespace HitObjects
+namespace osu_lib.HitObjects
 {
     //Represents a circle
     public class Circle : HitObjectWrapper

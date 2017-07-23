@@ -2,12 +2,12 @@ using System;
 using System.Globalization;
 using System.Collections.Generic;
 
-using Structures;
-using Structures.Curves;
-using HitObjectInterpreter;
-using BeatmapInfo;
+using osu_lib.Structures;
+using osu_lib.Structures.Curves;
+using osu_lib.HitObjectInterpreter;
+using osu_lib.BeatmapInfo;
 
-namespace HitObjects.Sliders
+namespace osu_lib.HitObjects.Sliders
 {
     public class PassthroughSlider : GenericSlider
     {

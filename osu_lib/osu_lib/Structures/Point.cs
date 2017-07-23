@@ -1,6 +1,6 @@
 using System;
 
-namespace Structures
+namespace osu_lib.Structures
 {
     /// <summary>
     /// A pair of two numbers

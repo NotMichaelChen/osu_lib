@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Structures
+namespace osu_lib.Structures
 {
     //Stores information about a single hit location, or a single catchable fruit
     //A hitcircle has one hitpoint, a slider has many hitpoints (slider head, ticks, and slider tail)

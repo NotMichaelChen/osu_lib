@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Structures.Curves
+namespace osu_lib.Structures.Curves
 {
     public class LinearCurve
     {

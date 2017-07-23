@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 
-namespace Structures
+namespace osu_lib.Structures
 {
     /// <summary>
     /// Represents a number as a binary number as a string

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using Structures;
-using BeatmapInfo;
-using HitObjects;
+using osu_lib.Structures;
+using osu_lib.BeatmapInfo;
+using osu_lib.HitObjects;
 
 namespace osu_lib
 {

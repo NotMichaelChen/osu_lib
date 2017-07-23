@@ -1,4 +1,4 @@
-namespace HitObjects
+namespace osu_lib.HitObjects
 {
     //Dummy class, since spinners don't contribute a meaningful hit location
     //Makes things more organized when parsing hitobjects though, so it gets implemented

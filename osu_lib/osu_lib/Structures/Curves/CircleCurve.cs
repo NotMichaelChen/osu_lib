@@ -1,6 +1,6 @@
 using System;
 
-namespace Structures.Curves
+namespace osu_lib.Structures.Curves
 {
     //Approximates a curve of three points using a circle calculated from those
     //three points.

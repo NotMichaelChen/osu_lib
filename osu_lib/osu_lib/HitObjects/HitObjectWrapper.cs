@@ -1,4 +1,4 @@
-namespace HitObjects
+namespace osu_lib.HitObjects
 {
     //Represents a hitobject that can return a list of its hit locations and
     //hit times

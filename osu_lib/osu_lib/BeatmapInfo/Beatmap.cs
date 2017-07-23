@@ -1,7 +1,7 @@
 using System.IO;
 using System.Collections.Generic;
 
-namespace BeatmapInfo
+namespace osu_lib.BeatmapInfo
 {
     //Contains all information about an osu beatmap file and allows access to certain tags and sections
     public class Beatmap

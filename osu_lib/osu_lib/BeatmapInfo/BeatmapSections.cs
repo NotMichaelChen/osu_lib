@@ -1,6 +1,6 @@
 using System;
 
-namespace BeatmapInfo
+namespace osu_lib.BeatmapInfo
 {
     public class BeatmapSections
     {
