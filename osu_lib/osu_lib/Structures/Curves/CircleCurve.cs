@@ -55,7 +55,7 @@ namespace Structures.Curves
                 else
                     anglediff = endangle + ((2 * Math.PI) - startangle);
 
-                angle = Dewlib.RestrictRange(t * anglediff + startangle, 0, 2 * Math.PI);
+                angle = LibFuncs.RestrictRange(t * anglediff + startangle, 0, 2 * Math.PI);
             }
             else
             {
@@ -64,7 +64,7 @@ namespace Structures.Curves
                 else
                     anglediff = startangle + ((2 * Math.PI) - endangle);
 
-                angle = Dewlib.RestrictRange(-t * anglediff + startangle, 0, 2 * Math.PI);
+                angle = LibFuncs.RestrictRange(-t * anglediff + startangle, 0, 2 * Math.PI);
             }
 
             Point accessed = new Point();
@@ -125,11 +125,11 @@ namespace Structures.Curves
         //of the curve
         private void calculateAngles(Point p1, Point p2, Point p3, double length)
         {
-            this.startangle = Dewlib.RestrictRange(Math.Atan2(p1.y - center.y, p1.x - center.x), 0, 2*Math.PI);
-            double midangle = Dewlib.RestrictRange(Math.Atan2(p2.y - center.y, p2.x - center.x), 0, 2*Math.PI);
+            this.startangle = LibFuncs.RestrictRange(Math.Atan2(p1.y - center.y, p1.x - center.x), 0, 2*Math.PI);
+            double midangle = LibFuncs.RestrictRange(Math.Atan2(p2.y - center.y, p2.x - center.x), 0, 2*Math.PI);
             //NOT the last point of this curve
             //Only used to calculate the direction of the curve
-            double lastangle = Dewlib.RestrictRange(Math.Atan2(p3.y - center.y, p3.x - center.x), 0, 2*Math.PI);
+            double lastangle = LibFuncs.RestrictRange(Math.Atan2(p3.y - center.y, p3.x - center.x), 0, 2*Math.PI);
 
             if(startangle >= midangle && midangle >= lastangle)
                 clockwise = false;
@@ -149,9 +149,9 @@ namespace Structures.Curves
             //This is an angle differential since the formula assumes a start from an angle of 0
             double anglediff = length / radius;
             if(clockwise)
-                this.endangle = Dewlib.RestrictRange(startangle + anglediff, 0, 2*Math.PI);
+                this.endangle = LibFuncs.RestrictRange(startangle + anglediff, 0, 2*Math.PI);
             else
-                this.endangle = Dewlib.RestrictRange(startangle - anglediff, 0, 2*Math.PI);
+                this.endangle = LibFuncs.RestrictRange(startangle - anglediff, 0, 2*Math.PI);
         }
     }
 }

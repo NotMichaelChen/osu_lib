@@ -22,7 +22,7 @@ namespace Structures.Curves
             //Degree of the bezier curve
             int degree = points.Length-1;
             
-            int[] pascalrow = Dewlib.GetPascalRow(degree);
+            int[] pascalrow = LibFuncs.GetPascalRow(degree);
             
             for(int i = 0; i < points.Length; i++)
             {

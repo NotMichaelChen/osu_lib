@@ -28,7 +28,7 @@ namespace HitObjects.Sliders
             List<Point> allcontrolpoints = new List<Point>();
             allcontrolpoints.Add(initialcoord);
             allcontrolpoints.AddRange(controlpoints);
-            Point[][] curvepoints = Dewlib.SplitPointList(allcontrolpoints.ToArray());
+            Point[][] curvepoints = LibFuncs.SplitPointList(allcontrolpoints.ToArray());
             
             foreach(Point[] curve in curvepoints)
             {
@@ -74,7 +74,7 @@ namespace HitObjects.Sliders
             while(curvenumber < curves.Length)
             {
                 Point next = curves[curvenumber].Bezier(t);
-                double distance = Dewlib.GetDistance(prev.x, prev.y, next.x, next.y);
+                double distance = LibFuncs.GetDistance(prev.x, prev.y, next.x, next.y);
                 travelled += distance;
                 prev = next;
                 if(travelled >= ticklength)
@@ -124,7 +124,7 @@ namespace HitObjects.Sliders
             while(curvenumber < curves.Length)
             {
                 Point next = curves[curvenumber].Bezier(t);
-                double distance = Dewlib.GetDistance(prev.x, prev.y, next.x, next.y);
+                double distance = LibFuncs.GetDistance(prev.x, prev.y, next.x, next.y);
                 travelled += distance;
                 prev = next;
                 if(travelled >= length)

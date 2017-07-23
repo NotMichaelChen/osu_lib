@@ -52,7 +52,7 @@ namespace BeatmapInfo
                     break;
 
                 //Get a pair of strings, one side is the tag, other side is the value of the tag
-                string[] pair = Dewlib.SplitFirst(filelines[i], ':');
+                string[] pair = LibFuncs.SplitFirst(filelines[i], ':');
 
                 //Skip if the pair is invalid
                 if(pair.Length != 2)
@@ -61,7 +61,7 @@ namespace BeatmapInfo
                 }
 
                 //Trim the pair, since the tag value will have a space (e.g. Mode: 0)
-                pair = Dewlib.TrimStringArray(pair);
+                pair = LibFuncs.TrimStringArray(pair);
 
                 //Essentially if the tag is a match
                 if(pair[0].ToUpper() == tag.ToUpper())
@@ -96,7 +96,7 @@ namespace BeatmapInfo
             }
 
             string[] finaltags = tags.ToArray();
-            finaltags = Dewlib.RemoveEmptyEntries(finaltags);
+            finaltags = LibFuncs.RemoveEmptyEntries(finaltags);
 
             //Return the list
             return finaltags;
@@ -137,7 +137,7 @@ namespace BeatmapInfo
         private void FormatFileString(string filecontents)
         {
             filelines = filecontents.Split('\n');
-            filelines = Dewlib.TrimStringArray(filelines);
+            filelines = LibFuncs.TrimStringArray(filelines);
         }
 
         /// <summary>

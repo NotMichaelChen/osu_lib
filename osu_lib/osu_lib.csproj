@@ -27,32 +27,39 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="BeatmapInfo\Beatmap.cs" />
-    <Compile Include="BeatmapInfo\BeatmapSections.cs" />
-    <Compile Include="HitObjectInterpreter\HitObjectParser.cs" />
-    <Compile Include="HitObjectInterpreter\HitObjectType.cs" />
-    <Compile Include="HitObjects\Circle.cs" />
-    <Compile Include="HitObjects\GenericHitObject.cs" />
-    <Compile Include="HitObjects\HitObjectWrapper.cs" />
-    <Compile Include="HitObjects\Spinner.cs" />
-    <Compile Include="HitObjects\Sliders\BezierSlider.cs" />
-    <Compile Include="HitObjects\Sliders\CatmullSlider.cs" />
-    <Compile Include="HitObjects\Sliders\LinearSlider.cs" />
-    <Compile Include="HitObjects\Sliders\PassthroughSlider.cs" />
-    <Compile Include="HitObjects\Sliders\Slider.cs" />
-    <Compile Include="Structures\BinaryString.cs" />
-    <Compile Include="Structures\HitPoint.cs" />
-    <Compile Include="Structures\Point.cs" />
-    <Compile Include="Structures\Curves\BezierCurve.cs" />
-    <Compile Include="Structures\Curves\CatmullCurve.cs" />
-    <Compile Include="Structures\Curves\CircleCurve.cs" />
-    <Compile Include="Structures\Curves\LinearCurve.cs" />
-    <Compile Include="Dewlib.cs" />
     <Compile Include="Testing.cs" />
-    <Compile Include="HitPointParser.cs" />
+    <Compile Include="osu_lib\BeatmapInfo\Beatmap.cs" />
+    <Compile Include="osu_lib\BeatmapInfo\BeatmapSections.cs" />
+    <Compile Include="osu_lib\HitObjectInterpreter\HitObjectParser.cs" />
+    <Compile Include="osu_lib\HitObjectInterpreter\HitObjectType.cs" />
+    <Compile Include="osu_lib\HitObjects\Circle.cs" />
+    <Compile Include="osu_lib\HitObjects\GenericHitObject.cs" />
+    <Compile Include="osu_lib\HitObjects\HitObjectWrapper.cs" />
+    <Compile Include="osu_lib\HitObjects\Sliders\BezierSlider.cs" />
+    <Compile Include="osu_lib\HitObjects\Sliders\CatmullSlider.cs" />
+    <Compile Include="osu_lib\HitObjects\Sliders\LinearSlider.cs" />
+    <Compile Include="osu_lib\HitObjects\Sliders\PassthroughSlider.cs" />
+    <Compile Include="osu_lib\HitObjects\Sliders\Slider.cs" />
+    <Compile Include="osu_lib\HitObjects\Spinner.cs" />
+    <Compile Include="osu_lib\Structures\BinaryString.cs" />
+    <Compile Include="osu_lib\Structures\Curves\BezierCurve.cs" />
+    <Compile Include="osu_lib\Structures\Curves\CatmullCurve.cs" />
+    <Compile Include="osu_lib\Structures\Curves\CircleCurve.cs" />
+    <Compile Include="osu_lib\Structures\Curves\LinearCurve.cs" />
+    <Compile Include="osu_lib\Structures\HitPoint.cs" />
+    <Compile Include="osu_lib\Structures\Point.cs" />
+    <Compile Include="osu_lib\LibFuncs.cs" />
+    <Compile Include="osu_lib\HitPointParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="osu_lib\" />
+    <Folder Include="osu_lib\BeatmapInfo\" />
+    <Folder Include="osu_lib\HitObjectInterpreter\" />
+    <Folder Include="osu_lib\HitObjects\" />
+    <Folder Include="osu_lib\Structures\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

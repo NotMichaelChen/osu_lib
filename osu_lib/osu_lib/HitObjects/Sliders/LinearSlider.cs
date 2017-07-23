@@ -40,7 +40,7 @@ namespace HitObjects.Sliders
                     allcontrolpoints.Add(initialcoord);
                 allcontrolpoints.AddRange(controlpoints);
 
-                Point[][] curvepoints = Dewlib.SplitPointList(allcontrolpoints.ToArray());
+                Point[][] curvepoints = LibFuncs.SplitPointList(allcontrolpoints.ToArray());
                 foreach(Point[] curve in curvepoints)
                 {
                     if(curve.Length > 2)

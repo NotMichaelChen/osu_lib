@@ -42,7 +42,7 @@ namespace Structures.Curves
             while(curvestartpoint < controlpoints.Count - 2)
             {
                 Point next = GetPointBetween(curvestartpoint, curvestartpoint+1, t);
-                double distance = Dewlib.GetDistance(prev.x, prev.y, next.x, next.y);
+                double distance = LibFuncs.GetDistance(prev.x, prev.y, next.x, next.y);
                 travelled += distance;
                 prev = next;
                 if(travelled >= interval)
@@ -85,7 +85,7 @@ namespace Structures.Curves
             while(curvestartpoint < controlpoints.Count - 2)
             {
                 Point next = GetPointBetween(curvestartpoint, curvestartpoint+1, t);
-                double distance = Dewlib.GetDistance(prev.x, prev.y, next.x, next.y);
+                double distance = LibFuncs.GetDistance(prev.x, prev.y, next.x, next.y);
                 length += distance;
                 prev = next;
                 if(length >= along)

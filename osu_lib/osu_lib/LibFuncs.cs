@@ -5,7 +5,7 @@ using System.Linq;
 using Structures;
 
 // Collection of useful static functions
-public static class Dewlib
+public static class LibFuncs
 {
     // Takes an array of strings and trims all of their trailing and leading whitespace
     public static string[] TrimStringArray(string[] arr)

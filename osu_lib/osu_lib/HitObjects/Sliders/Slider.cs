@@ -171,7 +171,7 @@ namespace HitObjects.Sliders
                 //Split the string by commas to get all the relevant times
                 string[] attributes = timings[index].Split(',');
                 //Trim each string just in case
-                attributes = Dewlib.TrimStringArray(attributes);
+                attributes = LibFuncs.TrimStringArray(attributes);
                 //If the timing point is a higher time, then we want the previous timing section
                 if(Double.Parse(attributes[0]) > ms)
                 {
@@ -196,7 +196,7 @@ namespace HitObjects.Sliders
                     //Split the string by commas to get all the relevant times
                     string[] attributes = timings[i].Split(',');
                     //Trim each string just in case
-                    attributes = Dewlib.TrimStringArray(attributes);
+                    attributes = LibFuncs.TrimStringArray(attributes);
 
                     if(Double.Parse(attributes[1]) > 0)
                     {
@@ -229,7 +229,7 @@ namespace HitObjects.Sliders
                 //Split the string by commas to get all the relevant times
                 string[] attributes = timings[i].Split(',');
                 //Trim each string just in case
-                attributes = Dewlib.TrimStringArray(attributes);
+                attributes = LibFuncs.TrimStringArray(attributes);
                 //If the timing point is a higher time, then we want the previous timing section
                 if(Double.Parse(attributes[0]) > ms)
                 {

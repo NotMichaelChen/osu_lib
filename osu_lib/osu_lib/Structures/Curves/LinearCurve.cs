@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace Structures.Curves
@@ -43,7 +43,7 @@ namespace Structures.Curves
         //Note that this is NOT the length of the slider
         public double DistanceBetween()
         {
-            return Dewlib.GetDistance(begin.x, begin.y, end.x, end.y);
+            return LibFuncs.GetDistance(begin.x, begin.y, end.x, end.y);
         }
     }
 }
