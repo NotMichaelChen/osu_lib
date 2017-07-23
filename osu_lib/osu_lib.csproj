@@ -29,7 +29,6 @@
   <ItemGroup>
     <Compile Include="BeatmapInfo\Beatmap.cs" />
     <Compile Include="BeatmapInfo\BeatmapSections.cs" />
-    <Compile Include="HitObjectInterpreter\HitObjectListParser.cs" />
     <Compile Include="HitObjectInterpreter\HitObjectParser.cs" />
     <Compile Include="HitObjectInterpreter\HitObjectType.cs" />
     <Compile Include="HitObjects\Circle.cs" />
@@ -51,6 +50,9 @@
     <Compile Include="Dewlib.cs" />
     <Compile Include="Testing.cs" />
     <Compile Include="HitPointParser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
