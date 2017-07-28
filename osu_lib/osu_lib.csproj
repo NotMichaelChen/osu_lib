@@ -27,7 +27,7 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Testing.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="osu_lib\BeatmapInfo\Beatmap.cs" />
     <Compile Include="osu_lib\BeatmapInfo\BeatmapSections.cs" />
     <Compile Include="osu_lib\HitObjectInterpreter\HitObjectParser.cs" />
@@ -50,6 +50,7 @@
     <Compile Include="osu_lib\Structures\Point.cs" />
     <Compile Include="osu_lib\LibFuncs.cs" />
     <Compile Include="osu_lib\HitPointParser.cs" />
+    <Compile Include="Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

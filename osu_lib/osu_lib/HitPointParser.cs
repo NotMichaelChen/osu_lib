@@ -17,6 +17,9 @@ namespace osu_lib
         {
             map = new Beatmap(filename);
 
+            if(map.GetTag("general", "mode") == "3")
+                throw new ArgumentException("Error, mania mode parsing not supported");
+
             List<HitPoint> hitpointbuffer = new List<HitPoint>();
             string[] hitobjectids = map.GetSection("hitobjects");
 
@@ -45,7 +48,7 @@ namespace osu_lib
                 catch (Exception e)
                 {
                     //This is zero-indexed, so the first object is object=0
-                    throw new Exception(e.Message + "\nobject=" + i, e);
+                    throw new Exception(e.Message + "\nobject=" + i + "\n" + GetMetadata("title") + ": " + GetMetadata("version"), e);
                 }
             }
 
