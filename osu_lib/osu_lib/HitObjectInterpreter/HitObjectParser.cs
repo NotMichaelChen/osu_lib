@@ -90,20 +90,20 @@ namespace osu_lib.HitObjectInterpreter
             //Get the hitobject type
             string type = GetProperty(hitobject, "type");
 
-            BinaryString typeid = new BinaryString(Convert.ToInt32(type));
+            byte bitfield = Convert.ToByte(type);
 
             //Binary 1
-            if(typeid.GetBit(0) == 1)
+            if((bitfield & (1 << 0)) == 1)
             {
                 return HitObjectType.Circle;
             }
             //Binary 2
-            else if(typeid.GetBit(1) == 1)
+            else if((bitfield & (1 << 1)) == 1)
             {
                 return HitObjectType.Slider;
             }
             //Binary 8
-            else if(typeid.GetBit(3) == 1)
+            else if((bitfield & (1 << 3)) == 1)
             {
                 return HitObjectType.Spinner;
             }
